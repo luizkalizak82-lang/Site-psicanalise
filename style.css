@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #f9f6f2;
+    --primary-color: #a67c52;
+    --text-color: #4a3728;
+    --accent-color: #d4a373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Elementos de decoração (Flores/Folhas) */
+.leaf {
+    position: fixed;
+    color: var(--accent-color);
+    opacity: 0.2;
+    z-index: -1;
+}
+.leaf-1 { font-size: 150px; top: -20px; right: -30px; transform: rotate(20deg); }
+.leaf-2 { font-size: 100px; bottom: 50px; left: -20px; transform: rotate(-15deg); }
+.leaf-3 { font-size: 60px; top: 40%; left: 10%; opacity: 0.1; }
+
+.main-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    letter-spacing: 5px;
+}
+
+.logo-sub {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Espaço para o "Avatar" elegante sem foto */
+.profile-placeholder {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.specialty {
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 20px auto;
+}
+
+.info-box {
+    margin-bottom: 30px;
+}
+
+.cta-text {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.btn-whatsapp {
+    background: linear-gradient(135deg, #c59d74 0%, #a67c52 100%);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(166, 124, 82, 0.3);
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+}
